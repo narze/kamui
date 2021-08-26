@@ -1,0 +1,2 @@
+run:
+	@./kamui.sh
