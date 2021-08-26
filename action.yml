@@ -1,0 +1,13 @@
+name: kamui
+description: "Catch me if you can"
+inputs:
+  github-username:
+    description: "Github username to overwrite"
+    required: false
+    default: "55555555555555555555555555555555555"
+runs:
+  using: "composite"
+  steps:
+    - name: Kamui
+      run: ${{ github.action_path }}/kamui.sh
+      shell: bash

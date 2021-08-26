@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  kamui:
+    runs-on: ubuntu-latest
+    name: Kamui
+    steps:
+      - uses: actions/checkout@v2
+
+      - id: foo
+        uses: narze/kamui@v1
+
+      - name: Force push
+        run: |-
+          git push -f
